@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 import tqdm
+import argparse
 
 import model_train as model_utils
 
@@ -215,7 +216,7 @@ def main(data_path, kfold_splits, model_path, vis_output_path):
 
 if __name__ == "__main__":
     
-    parser = argparse.ArgumentParser(description='Rural vs urban bats model training')
+    parser = argparse.ArgumentParser(description='Rural vs urban bats model Grad-CAM visualization')
     parser.add_argument('-data','--data-path', help='Path to sorted_data directory in dataset', required=True)
     parser.add_argument('-k','--k-fold', help='K for K-fold from training parameters', type=int, required=True)
     parser.add_argument('-model','--model-path', help='Path to directory that contains the model', required=True)

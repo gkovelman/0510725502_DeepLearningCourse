@@ -7,7 +7,40 @@ Prequisites:
 There are two files in this project:
 
 1. **model_train.py** for training
+```usage: model_train.py [-h] -data DATA_PATH -output OUTPUT_DIR [-k K_FOLD] [-evaluate EVALUATE_MODEL]
+
+Rural vs urban bats model training
+
+options:
+  -h, --help            show this help message and exit
+  -data DATA_PATH, --data-path DATA_PATH
+                        Path to sorted_data directory in dataset
+  -output OUTPUT_DIR, --output-dir OUTPUT_DIR
+                        Path to output location
+  -k K_FOLD, --k-fold K_FOLD
+                        K for K-fold
+  -evaluate EVALUATE_MODEL, --evaluate-model EVALUATE_MODEL
+                        Path to (cross-validation) models for evaluation only
+```
+
 2. **visualize.py** for visualizing the results
+
+```
+usage: visualize.py [-h] -data DATA_PATH -k K_FOLD -model MODEL_PATH -vis VISUALIZATION_OUTPUT_PATH
+
+Rural vs urban bats model Grad-CAM visualization
+
+options:
+  -h, --help            show this help message and exit
+  -data DATA_PATH, --data-path DATA_PATH
+                        Path to sorted_data directory in dataset
+  -k K_FOLD, --k-fold K_FOLD
+                        K for K-fold from training parameters
+  -model MODEL_PATH, --model-path MODEL_PATH
+                        Path to directory that contains the model
+  -vis VISUALIZATION_OUTPUT_PATH, --visualization-output-path VISUALIZATION_OUTPUT_PATH
+                        Path to output visualization files
+```
 
 Both files required arguments, including the path to the downloaded dataset.
 
