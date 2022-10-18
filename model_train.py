@@ -582,7 +582,7 @@ def main(data_path, training_output_dir, kfold_splits, evaluate_model):
 if __name__ == "__main__":
         
     parser = argparse.ArgumentParser(description='Rural vs urban bats model training')
-    parser.add_argument('-data','--data-path', help='Path to data', required=True)
+    parser.add_argument('-data','--data-path', help='Path to sorted_data directory in dataset', required=True)
     parser.add_argument('-output','--output-dir', help='Path to output location', required=True)
     parser.add_argument('-k','--k-fold', help='K for K-fold', type=int, default=10)
     parser.add_argument('-evaluate','--evaluate-model', help='Path to (cross-validation) models for evaluation only', required=False)

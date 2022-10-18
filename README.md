@@ -2,6 +2,7 @@
 
 Prequisites:
 - Download the data from https://data.mendeley.com/datasets/rn268h9cmy/1 is required prior running the scripts.
+- requirements.txt contains the python environment used during development
 
 There are two files in this project:
 
